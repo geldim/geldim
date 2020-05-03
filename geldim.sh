@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$1" -eq "ssh" ]; then
+if [ "$1" == "ssh" ]; then
     GITHUB_USER=geldim
     TARGET_FILE=$HOME/.ssh/authorized_keys
     
