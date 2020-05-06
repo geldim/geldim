@@ -1,8 +1,7 @@
 #!/bin/bash
 
-echo "Select action:"
-echo "ssh - add public ssh key"
-read action
+read -e -p "Enter action [ssh]: " -i "ssh" action
+
 
 if [ "$action" == "ssh" ]; then
     GITHUB_USER=geldim
