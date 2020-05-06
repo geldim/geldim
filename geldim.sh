@@ -1,6 +1,10 @@
 #!/bin/bash
 
-if [ "$1" == "ssh" ]; then
+echo "Select action:"
+echo "ssh - add public ssh key"
+read action
+
+if [ "$action" == "ssh" ]; then
     GITHUB_USER=geldim
     TARGET_FILE=$HOME/.ssh/authorized_keys
     
